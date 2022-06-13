@@ -11,6 +11,20 @@
     margin: 0 auto;
 }
 
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.left, .right{
+    width: 50%;
+}
+
+img{
+    width: 100%;
+}
 /* header */
 
 header{
@@ -79,7 +93,7 @@ header .container nav ul li a{
 
 #home{
     min-height: 100vh;
-    background-color: blue;
+    background: linear-gradient(150deg, blue, rgb(0, 153, 255));
     border-radius: 0 0 25% 25%;
     padding-top: 10rem;
 }
@@ -115,6 +129,27 @@ header .container nav ul li a{
     padding: 30px 0;
 }
 
+
+#about .containt{
+    display: flex;
+}
+
+#about .containt .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+#about .containt .left h1{
+    margin-bottom: 2rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
 
 
 

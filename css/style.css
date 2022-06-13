@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header */
+
+header{
+    background-color: white;
+    line-height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+header .container .logo i{
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    display: none;
+}
+header .container nav{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.5s linear;
+}
+
+header .container nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container nav ul li{
+    padding: 0 2rem;
+}
+
+header .container nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+/* header end */
+
+
+#home{
+    min-height: 100vh;
+    background-color: blue;
+    border-radius: 0 0 25% 25%;
+    padding-top: 10rem;
+}
+
+#home .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home .left, #home .right{
+    width: 50%;
+}
+#home .right img{
+    width: 100%;
+}
+#home .brand{
+    font-size: 3rem;
+    color: white;
+}
+
+#home button{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 35px;
+    font-size: 20px;
+    border: 2px solid white;cursor: pointer;
+}
+
+
+#about{
+    padding: 30px 0;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 100%;
+    }
+
+    header .container .logo{
+        width: 100%;
+    }
+
+    header .container .logo i{
+        display: initial;
+    }
+
+    header .container nav{
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: white;
+    }
+
+    header .container nav.active{
+        top: 80px;
+    }
+
+    header .container nav ul{
+        display: block;
+        text-align: center;
+    }
+}

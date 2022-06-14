@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
@@ -16,10 +20,36 @@
 }
 
 .title{
-    text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
+    padding: 15px;
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    width: 25%;
+}
+
+.title::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border-top: 5px solid blue;
+    border-left: 5px solid blue;
+}
+
+.title::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    border-bottom: 5px solid blue;
+    border-right: 5px solid blue;
 }
 
 .left, .right{
@@ -39,6 +69,16 @@ header{
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+
+header.scroll{
+    background: linear-gradient(150deg, blue, rgb(0, 153, 255));
+    transition: 0.5s linear;
+}
+
+header.scroll .container nav ul li a{
+    color: white;
+    transition: 0.5s linear;
 }
 
 header .container{
@@ -100,6 +140,7 @@ header .container nav ul li a{
     background: linear-gradient(150deg, blue, rgb(0, 153, 255));
     border-radius: 0 0 25% 25%;
     padding-top: 10rem;
+    margin-top: 20px;
 }
 
 #home .container{
@@ -130,7 +171,12 @@ header .container nav ul li a{
 
 
 #about{
+    min-height: 100vh;
     padding: 30px 0;
+}
+
+#about .containt:nth-child(3){
+    flex-direction: row-reverse;
 }
 
 #about .containt .left{
@@ -216,6 +262,16 @@ footer .developer{
         width: 100%;
     }
 
+    .left, .right{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        width: 60%;
+    }
+
+
     header .container .logo{
         width: 100%;
     }
@@ -226,20 +282,82 @@ footer .developer{
 
     header .container nav{
         position: absolute;
-        top: -1000px;
+        top: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         left: 0;
         width: 100%;
         height: auto;
         display: block;
-        background-color: white;
+        background: linear-gradient(150deg, blue, rgb(0, 153, 255));
+        transition: 0.5s linear;
     }
 
     header .container nav.active{
-        top: 80px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
     header .container nav ul{
         display: block;
         text-align: center;
     }
+
+    header .container nav ul li a{
+        color: white;
+    }
+
+
+    #home{
+        padding-top: 45px;
+        padding-bottom: 20px;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    #home .container{
+        flex-direction: column-reverse;
+    }
+
+    #home .left, #home .right{
+        width: 100%;
+    }
+
+    #home .brand{
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    #about .containt{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #about .containt:nth-child(3){
+        flex-direction: column-reverse;
+    }
+
+    footer .containt{
+        flex-direction: column;
+    }
+
+
+    footer .footer-box{
+        width: 100% !important;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .social_links{
+        justify-content: center;
+    }
+
+    footer .social_links a{
+        margin: 0 1rem !important;
+    }
+
+
+
+
+
+
 }

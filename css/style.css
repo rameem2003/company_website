@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+.containt{
+    display: flex;
+}
+
 .title{
     text-align: center;
     font-size: 2.5rem;
@@ -129,11 +133,6 @@ header .container nav ul li a{
     padding: 30px 0;
 }
 
-
-#about .containt{
-    display: flex;
-}
-
 #about .containt .left{
     display: flex;
     align-items: center;
@@ -150,6 +149,65 @@ footer{
     background-color: black;
     color: white;
 }
+
+
+footer .footer-box{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .containt .footer-box:nth-child(1){
+    width: 40%;
+}
+
+
+footer .containt .footer-box:nth-child(2){
+    width: 30%;
+}
+
+footer .containt .footer-box:nth-child(3){
+    width: 30%;
+}
+
+footer .footer-box .brand_name .social_links{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+footer .footer-box .brand_name .social_links a:first-child{
+    margin-left: 0;
+}
+
+footer .footer-box .brand_name .social_links a{
+    margin: 0 1rem;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+footer .footer-box ul{
+    list-style-type: none;
+}
+
+footer .footer-box ul li{
+    margin: 1rem 0;
+}
+
+footer .footer-box ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+footer .developer{
+    text-align: center;
+}
+
 
 
 

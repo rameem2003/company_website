@@ -7,6 +7,7 @@ const header = document.querySelector("header");
 
 tog.addEventListener("click", () => {
     nav.classList.toggle("active");
+    tog.classList.toggle("fa-times");
 })
 
 

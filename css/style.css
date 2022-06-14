@@ -285,11 +285,16 @@ footer .developer{
 
 
     header .container .logo{
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
     }
 
     header .container .logo i{
         display: initial;
+        transition: 0.5s linear;
+    }
+    header .container .logo i.fa-times{
+        transform: rotate(180deg);
     }
 
     header .container nav{

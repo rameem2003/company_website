@@ -59,6 +59,9 @@ html{
 img{
     width: 100%;
 }
+
+
+
 /* header */
 
 header{
@@ -134,7 +137,7 @@ header .container nav ul li a{
 }
 /* header end */
 
-
+/* banner */
 #home{
     min-height: 100vh;
     background: linear-gradient(150deg, blue, rgb(0, 153, 255));
@@ -168,8 +171,11 @@ header .container nav ul li a{
     font-size: 20px;
     border: 2px solid white;cursor: pointer;
 }
+/* banner end */
 
 
+
+/* about */
 #about{
     min-height: 100vh;
     padding: 80px 0;
@@ -190,7 +196,25 @@ header .container nav ul li a{
 #about .containt .left h1{
     margin-bottom: 2rem;
 }
+/* about end */
 
+
+
+/* services */
+
+#services{
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+#services .title{
+    width: 30%;
+}
+
+/* services end */
+
+
+/* footer */
 footer{
     background-color: #282C2F;
     color: white;
@@ -265,19 +289,20 @@ footer .footer-box iframe{
 footer .developer{
     text-align: center;
 }
+/* footer end */
 
 
 
-
+/* responsive */
 @media screen and (max-width: 500px) {
     .container{
         width: 100%;
     }
-
+    
     .left, .right{
         width: 100%;
     }
-
+    
     .title{
         font-size: 1.5rem;
         width: 60%;
@@ -288,7 +313,7 @@ footer .developer{
         width: 95%;
         margin: 0 auto;
     }
-
+    
     header .container .logo i{
         display: initial;
         transition: 0.5s linear;
@@ -296,7 +321,7 @@ footer .developer{
     header .container .logo i.fa-times{
         transform: rotate(180deg);
     }
-
+    
     header .container nav{
         position: absolute;
         top: 100%;
@@ -343,27 +368,27 @@ footer .developer{
         text-align: center;
     }
 
-
+    
     #about .containt{
         flex-direction: column-reverse;
         text-align: center;
     }
-
+    
     #about .containt:nth-child(3){
         flex-direction: column-reverse;
     }
-
+    
     footer .containt{
         flex-direction: column;
     }
-
-
+    
+    
     footer .footer-box{
         width: 100% !important;
         flex-direction: column;
         text-align: center;
     }
-
+    
     footer .social_links{
         justify-content: center;
     }
@@ -372,9 +397,10 @@ footer .developer{
         margin: 0 1rem !important;
     }
 
-
-
-
-
-
+    
+    
+    
+    
+    
 }
+/* responsive end */

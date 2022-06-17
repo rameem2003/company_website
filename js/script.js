@@ -13,6 +13,7 @@ tog.addEventListener("click", () => {
 
 window.onscroll = () => {
     nav.classList.remove("active");
+    tog.classList.remove("fa-times");
 
     if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
         header.classList.add("scroll");

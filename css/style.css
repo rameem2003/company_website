@@ -341,6 +341,108 @@ footer .developer{
 
 
 /* responsive */
+
+@media screen and (max-width: 1400px) {
+    #services .services_container .service_box{
+        margin: 50px 15px;
+    }
+}
+
+@media screen and (max-width: 1155px) {
+    header .container nav ul li a{
+        font-size: 1.3rem;
+    }
+
+    #services .services_container .service_box{
+        margin: 50px 12px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    header .container .logo{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    header .container .logo i{
+        display: initial;
+        transition: 0.5s linear;
+    }
+    header .container .logo i.fa-times{
+        transform: rotate(180deg);
+    }
+    
+    header .container nav{
+        position: absolute;
+        top: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+        background: linear-gradient(150deg, blue, rgb(0, 153, 255));
+        transition: 0.5s linear;
+    }
+
+    header .container nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .container nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    header .container nav ul li a{
+        color: white;
+    }
+
+
+    .title{
+        font-size: 1.5rem;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    
+    .left, .right{
+        width: 100%;
+    }
+
+    #home{
+        padding-top: 45px;
+        padding-bottom: 20px;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    #home .container{
+        flex-direction: column-reverse;
+    }
+
+    #home .left, #home .right{
+        width: 100%;
+    }
+
+    #home .brand{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #about .containt{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    #about .containt:nth-child(3){
+        flex-direction: column-reverse;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .container{
         width: 100%;
